@@ -307,13 +307,13 @@ const ExperienceSection = () => {
                   <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-xs font-mono text-primary">
                     ──── BACKGROUND
                   </div>
-                  <h2 className="text-5xl md:text-6xl font-bold mb-4">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
                   My{" "}
                   <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                     Education
                   </span>
                 </h2>
-                <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
+                <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" />
                   <p className="max-w-md leading-relaxed text-muted-foreground">
                     Strong academic background in Computer Science with consistent performance and focus on technology, problem solving, and software development
                   </p>

@@ -188,7 +188,7 @@ const ProjectsSection = () => {
           <div className="inline-flex items-center px-3 py-1.5 rounded-full glass-subtle border border-primary/30 text-xs font-mono text-primary mb-6 glow-primary">
             ──── WORK
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             Featured{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Projects

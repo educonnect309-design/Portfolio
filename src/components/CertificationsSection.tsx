@@ -383,7 +383,7 @@ export const CertificationsSection = () => {
           <div className="inline-flex items-center px-3 py-1.5 rounded-full glass-subtle border border-primary/30 text-xs font-mono text-primary mb-6 glow-primary">
             ──── ACHIEVEMENTS
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             My{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Certifications
@@ -414,7 +414,7 @@ export const CertificationsSection = () => {
 
         {/* CENTER-FOCUSED CAROUSEL (all) or GRID (filtered) */}
         {activeFilter === "all" ? (
-          <div className="px-4">
+          <div className="px-2 sm:px-4 overflow-x-hidden">
             <CenterFocusedCarousel items={certifications} />
           </div>
         ) : (
