@@ -1,0 +1,406 @@
+export const personalInfo = {
+  name: "Yalaka Nikhil Reddy",
+  role: "Full-Stack Developer",
+  tagline: "Computer Science Engineering student with hands-on experience in web application development. Proficient in Java, Python, and modern web technologies, with practical exposure to MERN and PHP–MySQL applications.",
+  focus: "Open to full-stack development, web application, and software engineering roles where I can apply my MERN stack expertise and contribute to meaningful projects.",
+  email: "yalakanikhil30@gmail.com",
+  linkedin: "https://www.linkedin.com/in/yalaka-nikhil-reddy",
+  github: "https://github.com/YNikhil188",
+  resumeUrl: "/Yalaka_Nikhil_Reddy_resume.pdf",
+};
+
+export const stats = [
+  { value: 3, suffix: "+", label: "Major Projects" },
+  { value: 4, suffix: "+", label: "Certifications" },
+  { value: 8.5, suffix: "", label: "CGPA" },
+];
+
+export const about = {
+  summary: "I am a Computer Science Engineering student at SIMATS with a passion for building robust, full-stack web applications. My experience spans across MERN stack development, Java, Python, and database design. I combine hands-on technical skills with critical thinking to solve real-world problems. Currently focused on mastering modern web technologies and cloud practices while contributing to meaningful projects that have tangible impact.",
+  highlights: [
+    "Developed BugCrew, a MERN-based bug tracking system with role-based access control, authentication, and workflow management serving multiple users and admins.",
+    "Built Xceltics, an interactive analytics platform with REST APIs, JWT authentication, and real-time data visualization using React, Node.js, and MongoDB.",
+    "Created CarRento, a responsive car rental management system with vehicle listings, booking functionality, and secure backend integration using PHP and MySQL.",
+    "Proficient in Java, Python, JavaScript, and HTML/CSS with expertise in MERN stack and relational databases.",
+    "Completed Oracle Java Foundation, IBM SQL and Relational Databases, and Oracle Cloud Database Services certifications.",
+    "Strong fundamentals in version control, critical thinking, and data-driven decision-making.",
+  ],
+};
+
+export interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  type: "work" | "education";
+  summary: string;
+  bullets: string[];
+}
+
+export const experiences: Experience[] = [
+  {
+    company: "SIMATS ENGINEERING",
+    role: "Bachelor of Engineering in Computer Science",
+    period: "Aug 2022 - Present",
+    type: "education",
+    summary: "Pursuing B.E in Computer Science with focus on full-stack development and modern web technologies.",
+    bullets: [
+      "CGPA: 8.5",
+      "Coursework: Data Structures, Web Development, Database Management, Software Engineering",
+      "Active in technical projects and hands-on learning of industry practices",
+    ],
+  },
+  {
+    company: "Narayana Junior College",
+    role: "Intermediate in MPC",
+    period: "May 2022",
+    type: "education",
+    summary: "Completed intermediate education with strong foundation in Mathematics, Physics, and Chemistry.",
+    bullets: [
+      "Marks: 874/1000 (87%)",
+    ],
+  },
+  {
+    company: "City Central School",
+    role: "Secondary School Certificate",
+    period: "May 2020",
+    type: "education",
+    summary: "Completed secondary education with excellent academic performance.",
+    bullets: [
+      "GPA: 10/10",
+    ],
+  },
+];
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  date: string;
+  description: string;
+  category: "Programming" | "Database" | "Cloud" | "DevOps" | "AI/ML" | "Professional";
+  credentialId?: string;
+  credentialUrl?: string;
+}
+
+export const certifications: Certification[] = [
+  // ⭐ ORACLE PROFESSIONAL
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+    issuer: "Oracle",
+    date: "2025",
+    category: "DevOps",
+    credentialId: "102219890OCI25DOPOCP",
+    credentialUrl: "https://drive.google.com/file/d/1XzqXlFO6mmizlGdgqMYRdWQq9yuj-yd2/view?usp=drive_link",
+    description:
+      "Advanced certification in DevOps practices on Oracle Cloud Infrastructure including CI/CD and automation.",
+  },
+  {
+    title: "Oracle Cloud Database Services 2025 Certified Professional",
+    issuer: "Oracle",
+    date: "2025",
+    category: "Cloud",
+    credentialId: "102219890ODBCS25CP",
+    credentialUrl: "https://drive.google.com/file/d/1g9BZbh1EvzYZ80mzuKZKIaSZUYclFv2e/view?usp=drive_link",
+    description:
+      "Professional certification validating expertise in Oracle Cloud database services.",
+  },
+
+  // ☁️ AWS CLOUD
+  {
+    title: "AWS Academy Graduate - Cloud Architecting",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Cloud",
+    credentialUrl: "https://www.credly.com/go/GZui3Bx9",
+    description: "Designing scalable cloud architectures using AWS.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Developing",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Cloud",
+    credentialUrl: "https://www.credly.com/go/J7EPdujB",
+    description: "Building and deploying applications on AWS.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Foundations",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Cloud",
+    credentialUrl: "https://www.credly.com/go/avJjxig2",
+    description: "Core AWS cloud concepts and services.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Operations",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Cloud",
+    credentialUrl: "https://www.credly.com/go/wQPXTizH",
+    description: "Managing and monitoring AWS infrastructure.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Security Foundations",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Cloud",
+    credentialUrl: "https://www.credly.com/go/hw1g7pxs",
+    description: "AWS security and IAM practices.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Web Application Builder",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Cloud",
+    credentialUrl: "https://www.credly.com/go/2xxIEy4h",
+    description: "Building cloud-native web apps.",
+  },
+
+  // ⚙️ DEVOPS
+  {
+    title: "AWS Academy Graduate - Microservices and CI/CD Pipeline Builder",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "DevOps",
+    credentialUrl: "https://www.credly.com/go/SsrWMnUX",
+    description: "CI/CD pipelines and microservices architecture.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Security Builder",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "DevOps",
+    credentialUrl: "https://www.credly.com/go/fLgV5DVU",
+    description: "Secure cloud architecture and access control.",
+  },
+  {
+    title: "AWS Academy Graduate - Data Center Technician",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Professional",
+    credentialUrl: "https://www.credly.com/go/SbuY6k78",
+    description: "Infrastructure and data center operations.",
+  },
+
+  // 📊 DATA + AI
+  {
+    title: "AWS Academy Graduate - Data Engineering",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Database",
+    credentialUrl: "https://www.credly.com/go/D6Cdnd7p",
+    description: "Data pipelines and large-scale processing.",
+  },
+  {
+    title: "AWS Academy Graduate - Cloud Data Pipeline Builder",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "Database",
+    credentialUrl: "https://www.credly.com/go/PdAFR6rd",
+    description: "ETL workflows and data pipelines.",
+  },
+  {
+    title: "AWS Academy Graduate - Machine Learning Foundations",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "AI/ML",
+    credentialUrl: "https://www.credly.com/go/m1Ghz30E",
+    description: "ML fundamentals and model building.",
+  },
+  {
+    title: "AWS Academy Graduate - Machine Learning for NLP",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "AI/ML",
+    credentialUrl: "https://www.credly.com/go/JASHEnEH",
+    description: "NLP and text-based ML models.",
+  },
+  {
+    title: "AWS Academy Graduate - Generative AI Foundations",
+    issuer: "AWS Academy",
+    date: "2025",
+    category: "AI/ML",
+    credentialUrl: "https://www.credly.com/badges/34133cba-c474-4c53-a85a-07a514125dfc",
+    description: "Generative AI and LLM concepts.",
+  },
+
+  // 💻 PROGRAMMING
+  {
+    title: "Oracle Certified in Java Foundation",
+    issuer: "Oracle",
+    date: "2024",
+    category: "Programming",
+    credentialUrl: "https://drive.google.com/file/d/1Xk4xqIUpsraPkMebKzl3qlzkEh6X8JSr/view?usp=drive_link",    
+    description: "Core Java and OOP concepts.",
+  },
+  {
+    title: "Java Fundamentals",
+    issuer: "Oracle Academy",
+    date: "2024",
+    category: "Programming",
+    credentialUrl: "https://drive.google.com/file/d/1XhUz7tlIwwuoeZnMiZgM_ngeFfSYVCOx/view?usp=drive_link",    
+    description: "Java syntax and programming basics.",
+  },
+  {
+    title: "Java SE 21 Developer (1Z0-830) Preparation",
+    issuer: "Udemy",
+    date: "2025",
+    category: "Programming",
+    credentialUrl: "https://drive.google.com/file/d/1-vImoEA3ZjLYUN4IkvF7JFEPJ5wC1z1m/view?usp=sharing",
+    description: "Advanced Java and certification prep.",
+  },
+
+  // 🗄 DATABASE
+  {
+    title: "SQL and Relational Databases 101",
+    issuer: "IBM",
+    date: "2025",
+    category: "Database",
+    credentialUrl: "https://courses.cognitiveclass.ai/certificates/ff30123191f54bd7aae8aec022b5b148",
+    description: "SQL queries and relational DB design.",
+  },
+
+  // 🐍 PYTHON
+  {
+    title: "Python 101 for Data Science",
+    issuer: "IBM",
+    date: "2025",
+    category: "Programming",
+    credentialUrl: "https://drive.google.com/file/d/188oU_4N75ZoP16Q5_EIVvDp77hHcHADr/view?usp=drive_link",
+    description: "Python basics for data science.",
+  },
+  {
+    title: "Python for Data Analysis",
+    issuer: "Great Learning",
+    date: "2024",
+    category: "Programming",
+    credentialUrl: "https://verify.mygreatlearning.com/YGZHQWNE",
+    description: "Data analysis using Python.",
+  },
+];
+
+export interface Project {
+  slug: string;
+  title: string;
+  category: string;
+  summary: string;
+  description: string;
+  impact: string;
+  role: string;
+  timeline?: string;
+  complexity: string;
+  tech: string[];
+  images: string[];
+  github: string;
+  live?: string;
+}
+
+export const projects: Project[] = [
+  {
+    slug: "bugcrew",
+    title: "BugCrew - Bug Tracking System",
+    category: "Full-Stack Web Application",
+    summary: "A web-based bug tracking system supporting role-based access for users and admins with CRUD operations and workflow management.",
+    description: "Developed a comprehensive bug tracking system using the MERN stack with role-based access control for users and administrators. Implemented full CRUD operations, user authentication, and basic workflow management to efficiently track and resolve issues. Worked on API integration, debugging, and performance optimization.",
+    impact: "Demonstrates full-stack proficiency with practical implementation of authentication, database design, and user role management in a production-like application.",
+    role: "Full-Stack Developer",
+    timeline: "Aug 2025 - Sep 2025",
+    complexity: "Role-based access control, authentication, CRUD operations, API integration, and performance optimization",
+    images: [
+      "/images/projects/bugcrew/preview.png",
+      "/images/projects/bugcrew/login.png",
+      "/images/projects/bugcrew/Admin.png",
+      "/images/projects/bugcrew/Manager.png",
+      "/images/projects/bugcrew/Developer.png",
+      "/images/projects/bugcrew/Tester.png",
+    ],
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "REST APIs"],
+    github: "https://github.com/YNikhil188/bugcrew",
+    live: "https://bugcrew.vercel.app",
+  },
+  {
+    slug: "xceltics",
+    title: "Xceltics - Excel Analytics Platform",
+    category: "Full-Stack Analytics Application",
+    summary: "Interactive dashboards and charts for structured data visualization with secure file handling and user authentication.",
+    description: "Built an interactive analytics platform that visualizes structured data and generates actionable insights. Implemented user authentication using JWT, secure file handling, and comprehensive data processing through backend APIs. Created interactive dashboards and charts using Chart.js for effective data representation.",
+    impact: "Shows proficiency in end-to-end application flow, REST API development, database handling, and interactive UI design for data visualization.",
+    role: "Full-Stack Developer",
+    timeline: "May 2025 - July 2025",
+    complexity: "JWT authentication, file handling, data processing, interactive dashboards, and API integration",
+    images: [
+      "/images/projects/xceltics/Preview.png",
+      "/images/projects/xceltics/login.png",
+      "/images/projects/xceltics/Dashboard.png",
+      "/images/projects/xceltics/Uploads.png",
+      "/images/projects/xceltics/Charts.png",
+      "/images/projects/xceltics/Insights.png",
+    ],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Chart.js", "JWT"],
+    github: "https://github.com/YNikhil188/xceltics",
+    live: "https://xceltics.vercel.app",
+  },
+  {
+    slug: "carrento",
+    title: "CarRento - Car Rental Website",
+    category: "Full-Stack Web Application",
+    summary: "A responsive car rental management system with vehicle listings, booking functionality, and user authentication.",
+    description: "Built a complete car rental management platform featuring vehicle listings, booking functionality, and secure user authentication. Performed comprehensive form validation, session handling, and CRUD operations to ensure secure and reliable data flow. Focused on clean UI design, efficient database design, and seamless backend integration.",
+    impact: "Demonstrates proficiency in full-stack web development with PHP and MySQL, including form validation, session management, and responsive UI design.",
+    role: "Full-Stack Developer",
+    timeline: "Nov 2024 - Jan 2025",
+    complexity: "Form validation, session handling, CRUD operations, database design, and responsive UI",
+    images: [
+      "/images/projects/carrento/Carrento.png",
+    ],
+    tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+    github: "https://github.com/YNikhil188/carrento",
+  },
+];
+
+export interface Skill {
+  name: string;
+  category: "languages" | "frontend" | "backend" | "database" | "tools";
+  level: number;
+  icon: string;
+}
+
+export const skills: Skill[] = [
+  // Languages
+  { name: "Java", category: "languages", level: 85, icon: "Code2" },
+  { name: "Python", category: "languages", level: 75, icon: "Code2" },
+  { name: "JavaScript", category: "languages", level: 90, icon: "FileCode" },
+  { name: "PHP", category: "languages", level: 70, icon: "Server" },
+
+  // Frontend
+  { name: "HTML5", category: "frontend", level: 95, icon: "FileCode" },
+  { name: "CSS3", category: "frontend", level: 90, icon: "Palette" },
+  { name: "React", category: "frontend", level: 90, icon: "Layers" },
+  { name: "Tailwind CSS", category: "frontend", level: 85, icon: "Palette" },
+
+  // Backend
+  { name: "Node.js", category: "backend", level: 90, icon: "Server" },
+  { name: "Express.js", category: "backend", level: 85, icon: "Server" },
+  { name: "REST APIs", category: "backend", level: 85, icon: "Braces" },
+  { name: "JWT", category: "backend", level: 80, icon: "Key" },
+
+  // Database
+  { name: "MySQL", category: "database", level: 85, icon: "Database" },
+  { name: "MongoDB", category: "database", level: 90, icon: "Database" },
+  { name: "Database Design", category: "database", level: 80, icon: "Database" },
+
+  // Tools
+  { name: "Git", category: "tools", level: 90, icon: "GitBranch" },
+  { name: "GitHub", category: "tools", level: 90, icon: "Github" },
+  { name: "npm", category: "tools", level: 85, icon: "Container" },
+  { name: "ESLint", category: "tools", level: 75, icon: "Terminal" },
+  { name: "Responsive Design", category: "tools", level: 85, icon: "Palette" },
+  { name: "Form Validation", category: "tools", level: 80, icon: "FileCode" },
+  { name: "Session Management", category: "tools", level: 80, icon: "Key" },
+];
+
+export const chatSuggestions = [
+  "Tell me about BugCrew - your bug tracking system",
+  "What technologies did you use in Xceltics?",
+  "How did you build the CarRento platform?",
+  "What certifications do you have?",
+  "What are your key skills as a developer?",
+];
