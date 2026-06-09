@@ -158,12 +158,12 @@ export const SkillsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-12 px-4 sm:px-6"
         >
           <div className="inline-flex items-center px-3 py-1.5 rounded-full glass-subtle border border-primary/30 text-xs font-mono text-primary mb-6 glow-primary">
             ──── EXPERTISE
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             My{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Skills
@@ -175,7 +175,7 @@ export const SkillsSection = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 px-4 sm:px-6">
           {categories.map((category) => (
             <motion.button
               key={category.id}
@@ -196,7 +196,7 @@ export const SkillsSection = () => {
         {activeCategory === "all" ? (
           <InfiniteScrollSkills skills={skills} />
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 max-w-7xl mx-auto">
             <AnimatePresence mode="popLayout">
               {filteredSkills.map((skill) => {
                 const IconComponent = iconMap[skill.icon] || Code2;
